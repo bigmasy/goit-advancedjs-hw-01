@@ -122,3 +122,29 @@ textarea {
 .feedback-form button:hover {
   background: #6c8cff;
 }
+
+.btn {
+  display: flex;
+
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 240px;
+}
+
+.btn-link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #4f46e5;
+  color: #fff;
+  padding: 18px 36px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-link:hover {
+  background-color: #4338ca;
+  transform: translateY(-2px);
+}
