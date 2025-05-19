@@ -16,3 +16,80 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+.gallery {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  padding: 24px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.gallery-image:hover,
+.gallery-image:focus {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.feedback-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.feedback-form input[type='email'],
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.feedback-form input[type='email']:focus,
+.feedback-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.feedback-form button[type='submit'] {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.feedback-form button[type='submit']:hover {
+  background-color: #0056b3;
+}
