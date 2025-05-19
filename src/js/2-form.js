@@ -12,8 +12,7 @@ if (savedData) {
 
 form.addEventListener('input', event => {
   event.preventDefault();
-  formData[event.target.name] = event.target.value;
-  console.log(formData);
+  formData[event.target.name] = event.target.value.trim();
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 });
 
